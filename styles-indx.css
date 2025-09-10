@@ -37,11 +37,9 @@ nav a:hover::after {
   transform: scaleX(1); /* плавно появляется */
 }
 
-
-
 .left {
-  color: white;
-  font-size: 20px;
+  color: #ff3b30;
+  font-size: 28px;
   text-decoration: none;
 }
 
@@ -53,7 +51,7 @@ nav a:hover::after {
 .right a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .hero {
@@ -66,26 +64,16 @@ nav a:hover::after {
 }
 
 .hero h1 {
-  color: white;
-  font-size: 48px;
+  color: #8E2335;
+  font-size: 52px;
   margin-bottom: 30px;
 }
 
-.hero button {
-  padding: 15px 40px;
+.hero p {
+  width: 100%;
+  text-align: center;
   font-size: 20px;
-  font-weight: bold;
-  color: white;
-  background-color: #e50914;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
-}
-.hero button:hover {
-  border-radius: 30px 60px;
-  background-color: darkred;
+  color: #8E2335;
 }
 
 .card {

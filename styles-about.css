@@ -39,7 +39,7 @@ nav a:hover::after {
 
 .left {
   color: white;
-  font-size: 20px;
+  font-size: 28px;
   text-decoration: none;
 }
 
@@ -49,17 +49,36 @@ nav a:hover::after {
 }
 
 .right a {
-  color: white;
+  color: #ff3b30;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .text {
-  display: flex;
-  align-items: start;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: aliceblue;
+  height: 200px;
+}
+
+.text h2{
+    width: 100%;
+    text-align: center;
+}
+
+.text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+}
+
+.text2 p {
+font-size: 20px;
+  width: 100%;
+  text-align: center;
   color: aliceblue;
 }
