@@ -1,0 +1,127 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.product-image {
+  flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: red;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.description {
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-buy {
+  background-color: red;
+  color: #fff;
+}
+
+.btn-buy:hover {
+  background-color: darkred;
+}
+
+.btn-order {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid red;
+}
+
+.btn-order:hover {
+  background-color: red;
+  color: #fff;
+}
+
+/* форма заказа */
+.order-form {
+  margin-top: 40px;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.order-form h2 {
+  margin-bottom: 15px;
+  color: red;
+}
+
+.order-form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.order-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.order-form button {
+  width: 100%;
+  padding: 12px;
+  background: red;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-form button:hover {
+  background: darkred;
+}

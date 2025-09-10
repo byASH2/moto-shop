@@ -1,0 +1,158 @@
+body {
+  background-color: #0d0d0d;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #111;
+}
+
+nav a {
+  position: relative; /* нужно для псевдоэлемента */
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  margin-left: 20px;
+  padding-bottom: 3px; /* место под полоску */
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* отступ полоски от текста */
+  width: 100%;
+  height: 2px; /* толщина */
+  background: #ff3b30; /* цвет */
+  transform: scaleX(0); /* спрятана */
+  transform-origin: left center;
+  transition: transform 250ms ease;
+}
+
+nav a:hover::after {
+  transform: scaleX(1); /* плавно появляется */
+}
+
+
+
+.left {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+}
+
+.right a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+.hero button:hover {
+  border-radius: 30px 60px;
+  background-color: darkred;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 15px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+  border-radius: 30px 60px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card h2 {
+  color: white;
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.price {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card button {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: red;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: darkred;
+}
+
+.cards {
+  display: flex; /* ставим карточки в ряд */
+  flex-wrap: wrap; /* чтобы переносились на новую строку */
+  gap: 20px; /* отступы между ними */
+  justify-content: center; /* выравнивание по центру */
+}
